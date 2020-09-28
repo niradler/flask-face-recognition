@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upload</title>
+  </head>
+  <body>
+    <h1>Add Face</h1>
+    <form method="POST" action="/recognition" enctype="multipart/form-data">
+      <p><input type="file" name="img" /></p>
+      <p><input type="text" name="name" value="nir" /></p>
+      <p><input type="submit" value="Submit" /></p>
+    </form>
+    <h1>Face Recognition</h1>
+    <form method="POST" action="/compare" enctype="multipart/form-data">
+      <p><input type="file" name="img" /></p>
+      <p><input type="submit" value="Submit" /></p>
+    </form>
+  </body>
+</html>
